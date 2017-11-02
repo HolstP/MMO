@@ -24,7 +24,7 @@
         die("Connection failed: " . $con->connect_error);
     }
 
-            $currentVersion = "Dev 0.0.0.3";
+            $currentVersion = "Dev 0.0.2.0";
             $email = $_POST['email'];
             $password = $_POST['password'];
             $clientVersion = $_POST['clientVersion'];

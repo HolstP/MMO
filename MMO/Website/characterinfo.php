@@ -31,7 +31,7 @@
 	
 	//$userIP = $_SERVER['REMOTE_ADDR'];
 	
-	$sql = "SELECT user_id, charactername, units
+	$sql = "SELECT user_id, charactername, level
 			FROM characters
 			WHERE user_id = '" . $user_id . "'
 			ORDER BY id";
@@ -40,7 +40,7 @@
 			
 			while($row = mysqli_fetch_assoc($result)) {
 				
-				echo "Charactername " . $row['charactername'] . "|Units " . $row['units'] .";";
+				echo "Charactername " . $row['charactername'] . "|Level " . $row['level'] .";";
 				
 			}/*
 
